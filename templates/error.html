@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles3.css">
+    <title>ASCII Art Web Stylize</title>
+    <style>
+.banner {
+    background-color: black; /* Change background color to black */
+    color: #32CD32; /* Change text color to a greenish color */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-inline: 100px;
+    margin-bottom: 100px;
+    margin-block: 100px; /* Margin of 200px all around */
+    font-size: 1.5em; /* Font size */
+    overflow:auto;
+    padding: 10px;
+}
+.str_message {
+    text-align: center;
+}
+.status_code {
+    text-align: center;
+}
+.homepage {
+    text-align: right;
+    display: flex;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.submit {
+    background: #32CD32;
+}
+.banner button:hover{
+    background: #1d7e1d;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header><b>ASCII ART WEB</b></header>
+    </div>
+    <div class="banner">
+        <h1 class="status_code">{{.Code}}</h1>
+        <p class="str_message">{{.Str}}</p>
+        <hr>
+        <a class="homepage" href="/"><button class="submit" type="submit">Back to HomePage</button></a>
+    </div>
+    <div class="footer">
+        <footer>
+            Developed by 
+            <a href="https://github.com/mauriceombewa" target="_blank">Maurice Ombewa</a> & 
+            <a href="https://github.com/stkisengese" target="_blank">Stephen Kisengese</a>
+        </footer>
+    </div>
+</body>
+</html>

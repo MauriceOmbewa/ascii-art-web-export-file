@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Stephen Kisengese & Maurice Ombewa">
+	<meta name="description" content="A web application that converts text to ASCII art">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Ascii-Art-Stylize</title>
+</head>
+<body>
+    <div class="header">
+        <header><b>ASCII ART WEB</b></header>
+    </div>
+    <div class="form">
+        <form action="/ascii-art" method="post">
+            <div class="textarea">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+            </div>
+            <div class="radio">
+                <input type="radio" name="banner" value="shadow.txt"> Shadow
+                <input type="radio" name="banner" value="standard.txt"> Standard
+                <input type="radio" name="banner" value="thinkertoy.txt"> Thinkertoy
+            </div>
+            <div class="button">
+                <button class="button" type="submit">Generate Ascii Art</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            Developed by 
+            <a href="https://github.com/mauriceombewa" target="_blank">Maurice Ombewa</a> & 
+            <a href="https://github.com/stkisengese" target="_blank">Stephen Kisengese</a>
+        </footer>
+    </div>
+</body>
+</html>
